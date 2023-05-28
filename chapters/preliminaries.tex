@@ -47,26 +47,47 @@
 \end{figure}
 %Ischemic and hemorrhagic brain injury during venoarterial-extracorporeal membrane oxygenation
         
+\زیرقسمت{امتیاز ASPECT}
 
-% \begin{figure}[ht]
-% \centering
-% \includegraphics[width=\textwidth, keepaspectratio]{aspects-regions.png}
-% \caption[]{نواحی ASPECTS در دو برش از مغز. ۱۰ ناحیه شامل ،I ،C ،L ،IC \lr{M6}-\lr{M1}.}
-% \label{fig:aspects-regions}
-% \end{figure}
-% %Kuang, Hulin & Najm, Mohamed & Chakraborty, Debabrata & Maraj, Nicholas & Sohn, Sung-Il & Goyal, Mayank & Hill, Michael & Demchuk, Andrew & Menon, Bijoy & Qiu, Wu. (2018). Automated ASPECTS on Non-Contrast CT Scans in Acute Ischemic Stroke Patients Using Machine Learning. American Journal of Neuroradiology. 10.3174/ajnr.A5889. 
+ASPECTS 
+\footnote{The Alberta Stroke Program Early CT Score}
+یک امتیاز عددی از ۱ تا ۱۰ است که میزان پیشرفت تغییرات حاصل از سکته‌ی انسدادی را 
+نشان می‌دهد.
+ امتیاز‌دهی ،ASPECT 
+ محدوده‌ی رگ مغزی میانی را به ۱۰ ناحیه‌ی مشخص تقسیم می‌کند (تصویر ~\ref{fig:aspects-regions}).
+ امتیازدهی  از ۱۰ آغاز می‌شود و به ازای هر کدام از این ۱۰ ناحیه که علائم کاهش جریان 
+ خون را نشان می‌دهند، یک امتیاز از ۱۰ کم می‌شود.
+ این امتیاز برای تجویز لخته‌زدایی‌های درون‌رگی و برون‌رگی برای بیماران به‌کار می‌آید.
+ %ASPECTS (Alberta Stroke Program Early CT Score) Measurement Using Hounsfield Unit Values When Selecting Patients for Stroke Thrombectomy
 
-    
-پرونده‌ی اصلی پایان‌نامه در قالب استاندارد\زیرنویس{
-قالب استاندارد از گیت‌هاب به نشانی
-\href{https://github.com/zarrabi/thesis-template}
-{github.com/zarrabi/thesis-template}
-قابل دریافت است.}
-\کد{thesis.tex}  نام دارد.
-به ازای هر فصل از پایان‌نامه، یک پرونده در شاخه‌ی \کد{chapters} ایجاد نموده
-و نام آن را در  \کد{thesis.tex} (در قسمت فصل‌ها) درج نمایید.
-برای مشاهده‌ی خروجی، پرونده‌ی \کد{thesis.tex} را با زی‌لاتک کامپایل کنید.
-مشخصات اصلی پایان‌نامه را می‌توانید در پرونده‌ی \کد{front/info.tex} ویرایش کنید.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth, keepaspectratio]{aspects-regions.png}
+\caption[]{نواحی ASPECTS در دو برش از مغز. ۱۰ ناحیه شامل ،I ،C ،L ،IC \lr{M6}-\lr{M1}.}
+\label{fig:aspects-regions}
+\end{figure}
+%Kuang, Hulin & Najm, Mohamed & Chakraborty, Debabrata & Maraj, Nicholas & Sohn, Sung-Il & Goyal, Mayank & Hill, Michael & Demchuk, Andrew & Menon, Bijoy & Qiu, Wu. (2018). Automated ASPECTS on Non-Contrast CT Scans in Acute Ischemic Stroke Patients Using Machine Learning. American Journal of Neuroradiology. 10.3174/ajnr.A5889. 
+
+این امتیاز 
+به این منظور طراحی شده‌است که 
+در تشخیص بیمارانی که نتایج بهتری از لخته‌زدایی درون‌رگی
+کسب خواهند کرد،‌کمک کننده باشد.
+بعد‌ها از این امتیاز برای تشخیص بیمارانی استفاده شد که برای اعمال لخته‌زدایی برون‌رگی مناسب نیستند.
+درواقع عملیات باز کردن رگ‌ها 
+\footnote{recanalization}
+در بیمارانی که علائم سکته‌ی انسدادی در نواحی وسیعی از مغزشان گسترده شده، می‌تواند بی‌اثر یا حتی زیان‌بار باشد.
+اخیراً هم این امتیاز در
+مجموعه‌ی دستور‌العمل‌های مدیریت سکته‌ی مغزی
+انجمن قلب آمریکا به عنوان 
+ یک معیار کلیدی در تجویز 
+ لخته‌زدایی برون‌رگی عنوان شده‌است.
+ به نحوی که این روش درمانی برای بیمارانی با امتیاز $ASPECTS\geq 6$، توصیه می‌شود.
+%ASPECTS (Alberta Stroke Program Early CT Score) Measurement Using Hounsfield Unit Values When Selecting Patients for Stroke Thrombectomy
+با این تفسیر، مشخص می‌شود علی‌رغم ۱۰ امتیازی بودن ASPECTS، معمولا آن‌چه که اهمیت دارد، تنها یک حد آستانه بر روی این امتیاز است.
+به این نوع از امتیازدهی که وضعیت بیماران را به دو دسته‌ی بالا و پایین یک آستانه (مثلا $ASPECTS\geq6$) تقسیم می‌کند، امتیاز دوبخشی‌شده‌ی
+\footnote{dichotomized}
+ASPECTS می‌گویند.
+لازم به ذکر است که خروجی نهایی پژوهش حاصل و نتایج گزارش‌شده برای آن نیز، از نوع امتیازدهی دو‌بخشی خواهند بود.
 
 \زیرقسمت{عبارات ریاضی}
 
