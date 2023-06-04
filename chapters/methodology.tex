@@ -233,3 +233,78 @@
 \caption[]{داده‌افزایی به روش قرینه‌سازی تصادفی افقی.}
 \label{fig:horizontal-flip}
 \end{figure}
+
+روش دیگری که برای افزایش داده‌ها به کار گرفته شد، دوران مغز است. در این 
+تغییر، محور عمودی مغز بین $-30$ تا $30$ درجه به صورت تصادفی دوران می‌یابد.
+نمونه‌ی این تغییر در تصویر \ref{fig:rotation}
+قابل مشاهده است.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth, keepaspectratio]{rotation.png}
+\caption[]{داده‌افزایی به روش دوران تصادفی.}
+\label{fig:rotation}
+\end{figure}
+
+تکنیک دیگری که برای داده افزایی مورد استفاده قرار گرفته‌است، جابجایی و تغییر مقیاس تصادفی می‌باشد.
+این تغییرات به ترتیب در تصاویر \ref{fig:translate} و \ref{fig:scale} قابل مشاهده هستند.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth, keepaspectratio]{translate.png}
+\caption[]{داده‌افزایی به روش جابجایی تصادفی.}
+\label{fig:translate}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth, keepaspectratio]{scale.png}
+\caption[]{داده‌افزایی به روش تغییر مقیاس تصادفی.}
+\label{fig:scale}
+\end{figure}
+
+دو روش دیگری که برای افزایش داده‌ها به کار گرفته‌شده‌اند، تبدیل برشی
+\footnote{Shearing}
+تصادفی و زاویه‌ی دید
+\footnote{Perspective}
+تصادفی هستند.
+در یک تعریف غیر رسمی، تبدیل اول، تصویر مغز را کمی در راستای افقی کج‌تر می‌کند و تبدیل دوم، زاویه‌ی نگاه متفاوت به مغز را شبیه‌سازی می‌کند.
+نمونه‌ی این دو تبدیل به ترتیب در تصاویر \ref{fig:shear} و \ref{fig:perspective} آمده‌است.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth, keepaspectratio]{shear.png}
+\caption[]{داده‌افزایی به روش تبدیل برشی تصادفی.}
+\label{fig:shear}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth, keepaspectratio]{perspective.png}
+\caption[]{داده‌افزایی به روش زاویه‌ی دید تصادفی.}
+\label{fig:perspective}
+\end{figure}
+
+آخرین تکنیکی که برای افزایش داده‌ها مورد استفاده قرار گرفته‌است، 
+مات‌سازی گاوسی
+\footnote{Gaussian Blur}
+تصادفی است.
+در این روش، مقدار هر پیکسل با میانگین وزن‌داری از یک همسایگی آن پیکسل جایگزین می‌شود.
+به این ترتیب، تصویر قدری محو‌تر و درهم‌تنیده‌تر دیده می‌شود.
+شکل \ref{fig:gaussian} یک نمونه از این نوع داده‌افزایی را نشان می‌دهد.
+البته در این تصویر، به منظور نمایش بهتر، اندازه‌ی فیلتر گاوسی مقدار بزرگی در نظر گرفته شده.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth, keepaspectratio]{gaussian.png}
+\caption[]{داده‌افزایی به روش مات‌سازی گاوسی تصادفی.}
+\label{fig:gaussian}
+\end{figure}
+
+تمام تکنیک‌های مذکور به صورت تصادفی بر روی هر تصویر پیش‌پردازش‌شده اعمال شده و نتیجه‌ی آن‌ها
+به مدل ورودی داده می‌شوند.
+به این ترتیب، مجموعه‌داده‌ی در دسترس با تغییراتی جزئی، افزایش حجم قابل توجهی می‌یابد.
+باید توجه داشت که این تغییرات، شکل آسیب‌دیدگی را تغییر نمی‌دهند و تنوع موارد سکته‌ی مغزی‌ای که مدل می‌بیند را 
+افزایش نمی‌دهند.
+بلکه تنها باعث می‌شوند نمونه‌های موجود به صورت مطمئن‌تری فراگرفته شوند.
+در واقع تنوع به‌وجود آمده، باعث می‌شود مدل، ظاهر خاص داده‌های ورودی را حفظ نکند. بلکه با ویژگی‌های کلیدی آن‌ها را فرابگیرد.
