@@ -43,12 +43,18 @@
 \footnote{ناحیه‌ی مغز برای مقاصد نمایشی، کمی جا‌به‌جا شده‌است.}
 بنابراین، در اولین گام، لازم است وضوح تصاویر افزایش داده‌شود.\\
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{raw-ct.png}
-\caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، در حالت اولیه.}
-\label{fig:raw-ct}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{raw-ct.png}
+% \caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، در حالت اولیه.}
+% \label{fig:raw-ct}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{raw-ct}{0.5\textwidth}
+\شرح[تصویر نمونه پیش‌پردازش]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، در حالت اولیه.}
+\برچسب{fig:raw-ct}
+\پایان{شکل}
 
  میان مقدار هر پیکسل با بافت یا شیئی که نمایش می‌دهد ارتباط وجود دارد.
 به نحوی که آب، مقدار $0 HU$، هوا مقدار $-1000 HU$، بافت استخوانی مقدار $1000 HU$ و بافت مغزی در حدود $20-50 HU$ می‌باشد \cite{kamalian2016computed}.
@@ -62,12 +68,19 @@
 \ref{fig:windowed-image}
 می‌شود.\\
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{windowed-ct.png}
-\caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از تنظیم پهنای پنجره به 100 و سطح پنجره به ۵۰. سمت راست، تصویر پس از تنظیم پنجره را نمایش می‌دهد.}
-\label{fig:windowed-ct}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{windowed-ct.png}
+% \caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از تنظیم پهنای پنجره به 100 و سطح پنجره به ۵۰. سمت راست، تصویر پس از تنظیم پنجره را نمایش می‌دهد.}
+% \label{fig:windowed-ct}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{windowed-ct}{0.8\textwidth}
+\شرح[تنظیم پهنا و سطح پنجره‌ی تصاویر ]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از تنظیم پهنای پنجره به 100 و سطح پنجره به ۵۰. سمت راست، تصویر پس از تنظیم پنجره را نمایش می‌دهد.}
+\برچسب{fig:windowed-ct}
+\پایان{شکل}
+
 
 روش معمول برای افزایش وضوح تصاویر، به همین صورت با تنظیم پهنا و سطح پنجره می‌باشد.
 اما باید توجه داشت که میان تصاویر بیماران مختلف، تفاوت‌های جزئی وجود دارد.
@@ -118,12 +131,18 @@
 آمده‌است.
 البته باید توجه داشت که بهبود تصاویر پس از اعمال فیلتر، در این ابعاد کوچک فیلتر، به سادگی قابل تشخیص نیست.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{denoised-ct.png}
-\caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از اعمال فیلتر میانه. سمت راست تصویر پس از اعمال فیلتر را نشان می‌دهد.}
-\label{fig:denoised-ct}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{denoised-ct.png}
+% \caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از اعمال فیلتر میانه. سمت راست تصویر پس از اعمال فیلتر را نشان می‌دهد.}
+% \label{fig:denoised-ct}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{denoised-ct}{0.8\textwidth}
+\شرح[اعمال فیلتر میانه بر تصاویر]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از اعمال فیلتر میانه. سمت راست تصویر پس از اعمال فیلتر را نشان می‌دهد.}
+\برچسب{fig:denoised-ct}
+\پایان{شکل}
     
 \زیرقسمت{تنظیم زاویه}
 تصاویر مغز ممکن است به دلایلی چون حرکت سر بیمار، همگی زاویه‌ی یکسانی نداشته باشند.
@@ -131,12 +150,18 @@
 نمونه‌ی این محاسبات و تغییرات در تصویر انتخابی در شکل \ref{fig:aligned-ct}
 قابل مشاهده است.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{aligned-ct.png}
-\caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از تنظیم زاویه. سمت راست تصویر پس از تنظیم زاویه را نشان می‌دهد.}
-\label{fig:aligned-ct}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{aligned-ct.png}
+% \caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از تنظیم زاویه. سمت راست تصویر پس از تنظیم زاویه را نشان می‌دهد.}
+% \label{fig:aligned-ct}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{aligned-ct}{0.8\textwidth}
+\شرح[تنظیم زاویه‌ی تصاویر]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از تنظیم زاویه. سمت راست تصویر پس از تنظیم زاویه را نشان می‌دهد.}
+\برچسب{fig:aligned-ct}
+\پایان{شکل}
 
 \زیرقسمت{محدودسازی تصویر به ناحیه‌ی مغز}
 به دلایل مشابه قسمت قبل، ناحیه‌ی مغز بیمار ممکن است دقیقا در مرکز تصویر قرار نداشته باشد.
@@ -152,12 +177,18 @@
 \ref{fig:resized-ct}
 آمده‌است.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{resized-ct.png}
-\caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از محدودسازی به ناحیه‌ی مغز. سمت راست، تصویر پس از محدودسازی و استانداردسازی ابعاد را نشان می‌دهد.}
-\label{fig:resized-ct}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{resized-ct.png}
+% \caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از محدودسازی به ناحیه‌ی مغز. سمت راست، تصویر پس از محدودسازی و استانداردسازی ابعاد را نشان می‌دهد.}
+% \label{fig:resized-ct}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{resized-ct}{0.8\textwidth}
+\شرح[تنظیم ابعاد تصاویر]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از محدودسازی به ناحیه‌ی مغز. سمت راست، تصویر پس از محدودسازی و استانداردسازی ابعاد را نشان می‌دهد.}
+\برچسب{fig:resized-ct}
+\پایان{شکل}
 
 \زیرقسمت{حذف استخوان جمجمه}
 
@@ -191,24 +222,37 @@
 نمونه‌ی استخراج بافت مغزی به این روش بر روی تصویر نمونه، در شکل \ref{fig:skull-stripped-ct}
 قابل مشاهده است.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{skull-stripped-ct.png}
-\caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از حذف استخوان جمجمه. تصویر وسط، ناحیه‌ی تشخیص داده‌شده به عنوان بافت مغز و سمت راست تصویر حاصل از حذف استخوان جمجمه را نشان می‌دهد.}
-\label{fig:skull-stripped-ct}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{skull-stripped-ct.png}
+% \caption[]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از حذف استخوان جمجمه. تصویر وسط، ناحیه‌ی تشخیص داده‌شده به عنوان بافت مغز و سمت راست تصویر حاصل از حذف استخوان جمجمه را نشان می‌دهد.}
+% \label{fig:skull-stripped-ct}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{skull-stripped-ct}{\textwidth}
+\شرح[حذف استخوان جمجمه از تصاویر]{تصویر انتخابی برای نمایش مراحل پیش‌پردازش، پیش و پس از حذف استخوان جمجمه. تصویر وسط، ناحیه‌ی تشخیص داده‌شده به عنوان بافت مغز و سمت راست تصویر حاصل از حذف استخوان جمجمه را نشان می‌دهد.}
+\برچسب{fig:skull-stripped-ct}
+\پایان{شکل}
 
 همانطور که در قسمت افزایش وضوح ذکر شد پس از تکمیل این مرحله، ناحیه‌ی تشخیص داده‌شده به عنوان بافت مغز، برای تحلیل‌های آماری بر روی مقدار پیکسل‌های بافت مغز مورد استفاده قرار می گیرد و در افزایش وضوح تصویر به کار می‌آید.
 با استفاده از این روش، وضوح تصاویر و تمایز بافت سالم از آسیب‌دیده، به طور قابل توجهی افزایش می‌یابد.
 شکل \ref{fig:preprocessing-pipeline}
 مراحل کامل پیش‌پردازش بر روی تصویر انتخابی و نتیجه‌ی نهایی آن را نشان می‌دهد.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{preprocessing-pipeline.png}
-\caption[]{مراحل کامل فرایند پیش‌پردازش بر روی تصویر انتخابی. از چپ به راست ، این مراحل شامل تنظیم زاویه، محدودسازی به ناحیه‌ی مغز، حذف استخوان جمجمه، کاهش نویز و افزایش وضوح می‌باشند. دو تصویر ردیف پایین نیز از چپ به راست، ناحیه‌ی تشخیص داده‌شده به عنوان سر (با تخمین سر به صورت بیضی) و ناحیه‌ی تشخیص داده‌شده به عنوان بافت مغز را نشان می‌دهند.}
-\label{fig:preprocessing-pipeline}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{preprocessing-pipeline.png}
+% \caption[]{مراحل کامل فرایند پیش‌پردازش بر روی تصویر انتخابی. از چپ به راست ، این مراحل شامل تنظیم زاویه، محدودسازی به ناحیه‌ی مغز، حذف استخوان جمجمه، کاهش نویز و افزایش وضوح می‌باشند. دو تصویر ردیف پایین نیز از چپ به راست، ناحیه‌ی تشخیص داده‌شده به عنوان سر (با تخمین سر به صورت بیضی) و ناحیه‌ی تشخیص داده‌شده به عنوان بافت مغز را نشان می‌دهند.}
+% \label{fig:preprocessing-pipeline}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{preprocessing-pipeline}{\textwidth}
+\شرح[مراحل کامل پیش‌پردازش]{مراحل کامل فرایند پیش‌پردازش بر روی تصویر انتخابی. از چپ به راست ، این مراحل شامل تنظیم زاویه، محدودسازی به ناحیه‌ی مغز، حذف استخوان جمجمه، کاهش نویز و افزایش وضوح می‌باشند. دو تصویر ردیف پایین نیز از چپ به راست، ناحیه‌ی تشخیص داده‌شده به عنوان سر (با تخمین سر به صورت بیضی) و ناحیه‌ی تشخیص داده‌شده به عنوان بافت مغز را نشان می‌دهند.}
+\برچسب{fig:preprocessing-pipeline}
+\پایان{شکل}
+
 
 \قسمت{داده‌افزایی}
 
@@ -225,41 +269,65 @@
  به این ترتیب اگر یک تصویر با آسیب‌دیدگی در نیم‌کره‌ی چپ در مجموعه‌داده وجود داشته باشد، مدل می‌تواند آسیب‌دیدگی در نیم‌کره‌ی راست را نیز بیاموزد.
  یک نمونه از این داده‌افزایی در شکل \ref{fig:horizontal-flip} قابل مشاهده است.
 
- \begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{horizontal-flip.png}
-\caption[]{داده‌افزایی به روش قرینه‌سازی تصادفی افقی.}
-\label{fig:horizontal-flip}
-\end{figure}
+%  \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{horizontal-flip.png}
+% \caption[]{داده‌افزایی به روش قرینه‌سازی تصادفی افقی.}
+% \label{fig:horizontal-flip}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{horizontal-flip}{0.7\textwidth}
+\شرح[داده‌افزایی به روش قرینه‌سازی تصادفی افقی]{داده‌افزایی به روش قرینه‌سازی تصادفی افقی.}
+\برچسب{fig:horizontal-flip}
+\پایان{شکل}
 
 روش دیگری که برای افزایش داده‌ها به کار گرفته شد، دوران مغز است. در این 
 تغییر، محور عمودی مغز بین $-30$ تا $30$ درجه به صورت تصادفی دوران می‌یابد.
 نمونه‌ی این تغییر در تصویر \ref{fig:rotation}
 قابل مشاهده است.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{rotation.png}
-\caption[]{داده‌افزایی به روش دوران تصادفی.}
-\label{fig:rotation}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{rotation.png}
+% \caption[]{داده‌افزایی به روش دوران تصادفی.}
+% \label{fig:rotation}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{rotation}{0.7\textwidth}
+\شرح[داده‌افزایی به روش دوران تصادفی]{داده‌افزایی به روش دوران تصادفی.}
+\برچسب{fig:rotation}
+\پایان{شکل}
 
 تکنیک دیگری که برای داده افزایی مورد استفاده قرار گرفته‌است، جابجایی و تغییر مقیاس تصادفی می‌باشد.
 این تغییرات به ترتیب در تصاویر \ref{fig:translate} و \ref{fig:scale} قابل مشاهده هستند.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{translate.png}
-\caption[]{داده‌افزایی به روش جابجایی تصادفی.}
-\label{fig:translate}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{translate.png}
+% \caption[]{داده‌افزایی به روش جابجایی تصادفی.}
+% \label{fig:translate}
+% \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{scale.png}
-\caption[]{داده‌افزایی به روش تغییر مقیاس تصادفی.}
-\label{fig:scale}
-\end{figure}
+\شروع{شکل}[ht]
+\centerimg{translate}{0.7\textwidth}
+\شرح[داده‌افزایی به روش جابجایی تصادفی]{داده‌افزایی به روش جابجایی تصادفی.}
+\برچسب{fig:translate}
+\پایان{شکل}
+
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{scale.png}
+% \caption[]{داده‌افزایی به روش تغییر مقیاس تصادفی.}
+% \label{fig:scale}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{scale}{0.7\textwidth}
+\شرح[داده‌افزایی به روش تغییر مقیاس تصادفی]{داده‌افزایی به روش تغییر مقیاس تصادفی.}
+\برچسب{fig:scale}
+\پایان{شکل}
 
 دو روش دیگری که برای افزایش داده‌ها به کار گرفته‌شده‌اند، تبدیل برشی
 \footnote{Shearing}
@@ -269,19 +337,32 @@
 در یک تعریف غیر رسمی، تبدیل اول، تصویر مغز را کمی در راستای افقی کج‌تر می‌کند و تبدیل دوم، زاویه‌ی نگاه متفاوت به مغز را شبیه‌سازی می‌کند.
 نمونه‌ی این دو تبدیل به ترتیب در تصاویر \ref{fig:shear} و \ref{fig:perspective} آمده‌است.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{shear.png}
-\caption[]{داده‌افزایی به روش تبدیل برشی تصادفی.}
-\label{fig:shear}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{shear.png}
+% \caption[]{داده‌افزایی به روش تبدیل برشی تصادفی.}
+% \label{fig:shear}
+% \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{perspective.png}
-\caption[]{داده‌افزایی به روش زاویه‌ی دید تصادفی.}
-\label{fig:perspective}
-\end{figure}
+\شروع{شکل}[ht]
+\centerimg{shear}{0.7\textwidth}
+\شرح[داده‌افزایی به روش تبدیل برشی تصادفی]{داده‌افزایی به روش تبدیل برشی تصادفی.}
+\برچسب{fig:shear}
+\پایان{شکل}
+
+
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{perspective.png}
+% \caption[]{داده‌افزایی به روش زاویه‌ی دید تصادفی.}
+% \label{fig:perspective}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{perspective}{0.7\textwidth}
+\شرح[داده‌افزایی به روش زاویه‌ی دید تصادفی]{داده‌افزایی به روش زاویه‌ی دید تصادفی.}
+\برچسب{fig:perspective}
+\پایان{شکل}
 
 آخرین تکنیکی که برای افزایش داده‌ها مورد استفاده قرار گرفته‌است، 
 مات‌سازی گاوسی
@@ -292,12 +373,18 @@
 شکل \ref{fig:gaussian} یک نمونه از این نوع داده‌افزایی را نشان می‌دهد.
 البته در این تصویر، به منظور نمایش بهتر، اندازه‌ی فیلتر گاوسی مقدار بزرگی در نظر گرفته شده.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{gaussian.png}
-\caption[]{داده‌افزایی به روش مات‌سازی گاوسی تصادفی.}
-\label{fig:gaussian}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{gaussian.png}
+% \caption[]{داده‌افزایی به روش مات‌سازی گاوسی تصادفی.}
+% \label{fig:gaussian}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{gaussian}{0.7\textwidth}
+\شرح[داده‌افزایی به روش مات‌سازی گاوسی تصادفی]{داده‌افزایی به روش مات‌سازی گاوسی تصادفی.}
+\برچسب{fig:gaussian}
+\پایان{شکل}
 
 تمام تکنیک‌های مذکور به صورت تصادفی بر روی هر تصویر پیش‌پردازش‌شده اعمال شده و نتیجه‌ی آن‌ها
 به مدل ورودی داده می‌شوند.
@@ -360,6 +447,12 @@
 بخشی از بافت استخوانی در بافت مغزی نفوذ کرده‌بود.
 این مسئله سبب چند‌بخشی‌شدن مغز و ایجاد تنوع زیادی در بافت استخراج‌شده‌ی مغزی می‌شد و یادگیری را برای مدل مشکل می‌کرد.\\
 
+\شروع{شکل}[ht]
+\centerimg{aspects-selected-slices}{\textwidth}
+\شرح[برش‌های انتخابی ASPECTS]{برش‌های انتخابی ASPECTS.}
+\برچسب{fig:aspects-selected-slices}
+\پایان{شکل}
+
 \زیرقسمت{ساختار خروجی}
 
 خروجی نهایی مدل پروژه از تصاویر هر بیمار، امتیاز دوبخشی ASPECTS است.
@@ -410,12 +503,18 @@ $\geq6$ به مدل عرضه می‌شوند.
 جزئیات این شبکه، 
 طی آزمایش تعداد بسیار زیادی ساختار مختلف و ارزیابی نتایج حاصل از آن‌ها به صورت تجربی به‌دست آمده‌است.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{network.png}
-\caption[]{ساختار نهایی شبکه.}
-\label{fig:network}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\textwidth, keepaspectratio]{network.png}
+% \caption[]{ساختار نهایی شبکه.}
+% \label{fig:network}
+% \end{figure}
+
+\شروع{شکل}[ht]
+\centerimg{network}{\textwidth}
+\شرح[ساختار شبکه پیشنهادی]{ساختار شبکه پیشنهادی.}
+\برچسب{fig:network}
+\پایان{شکل}
 
 \قسمت{آموزش مدل}
 
