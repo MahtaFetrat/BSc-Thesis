@@ -193,7 +193,7 @@
 تا
 ۹۹٪
 در یک امتیازدهی سه‌بخشی 
-ارائه شده‌است \cite{yu2021automated}.
+ارائه شده‌است \cite{naganuma2021alberta}.
 آخرین مورد مطالعه‌شده نیز نتایج را در قالب 
 بهبودی که در توانایی تشخیصی متخصصان ایجاد می‌کند ذکر کرده‌است و از آن عبور می‌شود \cite{chen2022improving}.
 
@@ -225,7 +225,7 @@ ASPECTS
 \زیرقسمت{سایر روش‌ها}
 طبیعتاً روش‌های محاسبه‌ی خودکار ASPECTS محدود به روش‌های پیشنهادی فوق نیست
 و هر پژوهشی را نمی‌توان لزوما در یکی از این دسته‌ها قرار داد.
-در میان کارهای پیشین نیز چنین موردی وجود دارد \cite{chiang2022deep}.
+در میان کارهای پیشین نیز چنین موردی وجود دارد \cite{chen2022improving}.
 این پژوهش که جزء کار‌های تازه‌تر است، روش جالبی را به کار برده‌است که ذکر آن خالی از لطف نیست.
 
 در این پژوهش، نواحی ASPECTS ناحیه‌بندی می‌شوند.
@@ -392,23 +392,37 @@ ASPECTS می‌باشد و
 \تنظیم‌ازوسط
 \شرح[فهرست کارهای پیشین]{فهرست کارهای پیشین}
 
-\begin{tabular}{rccccccc}
+\begin{tabular}{cccccccc}
     \hline
     مرجع                                    & سال & داده‌ها                & برچسب                    & روش                     & آستانه‌\\ \hline
-    \multirow{2}{*}{\cite{lee2023clinical}} & \multirow{2}{*}{2023} & \multirow{2}{*}{>300} & \multirow{2}{*}{ناحیه}   & \multirow{2}{*}{ناحیه‌بندی و طبقه‌بندی}   & $\geq$ 5 \\ 
+    \multirow{2}{*}{\cite{lee2023clinical}} & 2023 & \multirow{2}{*}{>300} & \multirow{2}{*}{ناحیه}   & ناحیه‌بندی و طبقه‌بندی   & $\geq$ 5 \\ 
                                             &      &                       &                          &                          & $\geq$ 7 \\ 
     \cite{upadhyay2022deep}                 & 2022 & 1500                  & پیکسل                    & ناحیه‌بندی و هم‌پوشانی   & -         \\
-    \cite{cao2022deep}                      & 2022 & > 1000                & پیکسل                    & ناحیه‌بندی و طبقه‌بندی   & $\geq$ 7 \\ 
-    \cite{chiang2022deep}                   & 2020 & > 250                 & ناحیه                    & سایر                    & $\geq$ 6 \\ 
-    \cite{golkonda2022automated}            & 2022 & 77                    & مغز                      & طبقه‌بندی                & -         \\
-    \cite{chen2022improving}                & 2022 & > 1300                & پیکسل                    & ناحیه‌بندی و هم‌پوشانی   & - \\
-    \cite{naganuma2021alberta}              & 2021 & 151                   & ناحیه                    & ناحیه‌بندی و هم‌پوشانی   & $\geq$ 6 \\
-    \cite{liu2021deep}                      & 2021 & -                     & -                        & ناحیه‌بندی و طبقه‌بندی   & -  \\
-    \cite{yu2021automated}                  & 2021 & 90                    & -                        & ناحیه‌بندی و طبقه‌بندی   & $\geq$ 8 \\
-    \cite{kuang2021eis}                     & 2021 & > 250                 & پیکسل                    & ناحیه‌بندی و طبقه‌بندی   & $\geq$ 5 \\
-    \cite{kuang2019automated}               & 2019 & > 250                 & پیکسل                    & ناحیه‌بندی و طبقه‌بندی   & $\geq$ 5 \\
-    \cite{jung2018evaluating}               & 2018 & > 250                 & ناحیه                    & ناحیه‌بندی و طبقه‌بندی   & - \\ \hline
+    \cite{cao2022deep}                      & 2022 & > 1000                & پیکسل                    & & $\geq$ 7               & 913.0 &955.0 & 866.0  & \textbf{911.0} \\ 
+    \cite{chiang2022deep}                   & > 250                 &     ناحیه                 & $\geq$ 6               & 889.0 &722.0 & 907.0  & \textbf{82.0} \\ 
+    \cite{kuang2019automated}               & > 250                 &     پیکسل                 & $\geq$ 5               & 960.0 &978.0 & 800.0  & \textbf{89.0} \\ 
+    \cite{kuang2021eis}                     & > 250                 &     پیکسل                 & $\geq$ 5               & 900.0 &-    & -       & \textbf{87.0} \\
+    \cite{yu2021automated}                  & 90                    & -                          & $\geq$ 8               & 75.0-68.0 &63.0-61.0  & 35.0-19.0 & \textbf{-} \\
 \end{tabular}
+
+\lr{
+    \begin{tabular}{c|p{0.75\textwidth}}
+    \rl{شماره‌ی مرجع }          & \multicolumn{1}{c}{\rl{عنوان}}     \\ \hline \hline
+    % \rl{\cite{lee2023clinical}} & \lr{Clinical evaluation of a deep-learning model for automatic scoring of the Alberta stroke program early CT score on non-contrast CT} \\ \hline
+    % \rl{\cite{upadhyay2022deep}} & \lr{Deep-ASPECTS: A Segmentation-Assisted Model for Stroke Severity Measurement}\\    \hline
+    \rl{\cite{cao2022deep}}     & \lr{Deep learning derived automated ASPECTS on non-contrast CT scans of acute ischemic stroke patients}                  \\ \hline
+    \rl{\cite{chiang2022deep}}  & \lr{Deep Learning-Based Automatic Detection of ASPECTS in Acute Ischemic Stroke: Improving Stroke Assessment on CT Scans}    \\   \hline   
+    \rl{\cite{golkonda2022automated}} & \lr{Automated ASPECTS Classification in Acute Ischemic Stroke using EfficientNetV2}\\ \hline
+    \rl{\cite{chen2022improving}} & \lr{Improving the diagnosis of acute ischemic stroke on non-contrast CT using deep learning a multicenter study}\\ \hline
+    \rl{\cite{naganuma2021alberta}} & \lr{Alberta Stroke Program Early CT Score Calculation Using the Deep Learning-Based Brain Hemisphere Comparison Algorithm}\\   \hline
+    \rl{\cite{liu2021deep}} & \lr{Deep Learning-Based ASPECTS Scoring Method for Acute Ischemic Stroke} \\   \hline
+    \rl{\cite{kuang2021eis}} & \lr{EIS-Net: Segmenting early infarct and scoring ASPECTS simultaneously on non-contrast CT of patients with acute ischemic stroke} \\  \hline  
+    \rl{\cite{yu2021automated}} & \lr{An automated ASPECTS method with atlas-based segmentation} \\   \hline
+    \rl{\cite{kuang2019automated}} & \lr{Automated ASPECTS on Noncontrast CT Scans in Patients with Acute Ischemic Stroke Using Machine Learning} \\   \hline
+    \rl{\cite{jung2018evaluating}} & \lr{Evaluating a Deep-Learning System for Automatically Calculating the Stroke ASPECT Score} \\  \hline 
+    \end{tabular}
+}
+
 
 \برچسب{جدول:related-works}
 \پایان{لوح}
